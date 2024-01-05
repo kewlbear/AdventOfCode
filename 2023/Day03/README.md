@@ -40,7 +40,7 @@ let input = try! String(contentsOfFile: path)
 var dict = [[Int]: [Substring]]()
 ```
 
-딕셔너리의 키(key)는 기호의 위치(행과 열)를 담은 배열이다.  튜플로 하고 싶었지만 [https://www.reddit.com/r/swift/comments/132ecs7/comment/ji4o1d2/](Hashable 프로토콜을 아직 지원하지 않는 문제)가 있다.
+딕셔너리의 키(key)는 기호의 위치(행과 열)를 담은 배열이다.  튜플로 하고 싶었지만 [`Hashable` 프로토콜을 아직 지원하지 않는 문제](https://www.reddit.com/r/swift/comments/132ecs7/comment/ji4o1d2/)가 있다.
 
 편의를 위해 딕셔너리에 숫자를 추가하는 함수를 정의하자.
 
