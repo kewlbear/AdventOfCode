@@ -30,14 +30,30 @@ Swift는 AoC에서 인기있는 언어는 아닌 것 같다.  [Subreddit]()을 �
 
 물론 경우에 따라 예외는 있을 수 있다.  그럴 때는 해당 일자의 README.md 파일에 관련 내용을 설명하겠다.
 
-Xcode에서 패키지를 열어서 실행하거나 터미널에서 패키지 디렉터리로 이동 후 아래 명령중 하나로 실행할 수 있다.
+## 실행
+
+### Xcode
+
+1. Xcode에서 원하는 연도의 일자 패키지 디렉터리를 연다.
+1. ⌥키를 누른 상태에서 실행 버튼을 누르거나 ⌥⌘R 단축키를 누른다.
+1. Arguments Passed On Launch 목록에 사용할 입력 파일 이름/경로들을 추가한다.
+![](Images/Run-Arguments.png)
+1. 파일 이름을 입력한 경우 Working Directory에서 Use custom working directory:에 체크하고 아래에 경로를 입력하거나 선택한다.
+![](Images/Run-Options.png)
+1. Run 버튼을 클릭한다.
+
+### 터미널
+
+소스 파일만 저장해서 실행하거나
 
 ```
-swift Sources/main.swift <input file>
+swift <소스 경로>/main.swift <엽력 파일>
 ```
 
+패키지 디렉터리로 이동 후 아래 명령으로 실행할 수 있다.
+
 ```
-swift run Day<nn> <input file>
+swift run Day<일자> <입력 파일>
 ```
 
 ## 팁
@@ -51,4 +67,10 @@ swift run Day<nn> <input file>
 
 ## 패키지 생성
 
-Xcode: File > New > Package... > macOS > Executable
+1. Xcode 메뉴에서 File > New > Package... 또는 단축키 ⌃⇧⌘N 입력
+
+2. macOS 탭에서 Executabl서 선택
+![스크린샷](Images/New-Package.png)
+
+Command Line Tool의 경우 ArgumentParser 캐키지 의존성이 추가된다.
+
