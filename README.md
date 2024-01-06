@@ -72,5 +72,5 @@ swift run Day<일자> <입력 파일>
 2. macOS 탭에서 Executabl서 선택
 ![스크린샷](Images/New-Package.png)
 
-Command Line Tool의 경우 ArgumentParser 캐키지 의존성이 추가된다.
+Command Line Tool의 경우 ArgumentParser 패키지 의존성이 추가된다.
 
